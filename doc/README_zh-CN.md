@@ -2,7 +2,7 @@
 
 # 🤖 Leo Oral PK Automator
 
-**An LSPosed + Chrome DevTools Protocol study project that automates the Xiaoyuan Kousuan PK quiz — for learning WebView debugging and Android reverse engineering only.**
+**一个 LSPosed + Chrome DevTools 协议的研究项目，自动化小猿口算 PK 答题 —— 仅供学习 WebView 调试与 Android 逆向。**
 
 [![leo-oral-pk-automator](https://img.shields.io/badge/leo-oral-pk-automator-LEO-orange.svg)](https://github.com/functy23/leo-oral-pk-automator)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg?logo=python&logoColor=white)](https://www.python.org/)
@@ -17,37 +17,37 @@
 
 [Issues](https://github.com/functy23/leo-oral-pk-automator/issues) • [AGENTS.md](AGENTS.md)
 
-**English** | [简体中文](doc/README_zh-CN.md)
+[English](../README.md) | **简体中文**
 </div>
 
 ---
-> For learning WebView debugging / Android reverse engineering / automation techniques only.
-> Using automation tools in online PK violates the platform user agreement and may lead to account bans. Do not use this for cheating.
+> 仅供学习 WebView 调试 / Android 逆向 / 自动化技术。
+> 使用自动化工具参与在线 PK 违反平台用户协议，可能导致账号封禁。请勿用于作弊。
 
-An automation script based on an **LSPosed module + Chrome DevTools Protocol (CDP)**.
+基于 **LSPosed 模块 + Chrome DevTools 协议 (CDP)** 的自动化脚本。
 
-## Required Module (Must Be Used Together)
+## 依赖模块（必须配合）
 
-This repository needs to be used together with the LSPosed module repository:
+本仓库需要配合 LSPosed 模块仓库使用:
 https://github.com/functy23/leo-webview-debugger
 
-1. Install the module APK
-2. Enable it in LSPosed and check com.fenbi.android.leo in the scope
-3. Run pk_auto.py
+1. 安装模块 APK
+2. LSPosed 启用, 作用域勾选 com.fenbi.android.leo
+3. 运行 pk_auto.py
 
-## Usage
+## 使用
 
 pip install websocket-client
 python3 pk_auto.py
 
-Startup prompts: minimum/maximum delay (press Enter to use the defaults 0.01-0.03), number of rounds to loop (0 = infinite)
+启动交互: 最低/最高延迟(回车用默认 0.01-0.03), 循环局数(0=无限)
 
-## Files
+## 文件
 
-- pk_auto.py - main script
-- pk_watch.py / pk_netwatch.py / pk_tracewatch.py - debugging tools
-- scripts/ - reconnaissance scripts used during development
-- AGENTS.md - AI development guide
+- pk_auto.py 主脚本
+- pk_watch.py / pk_netwatch.py / pk_tracewatch.py 调试工具
+- scripts/ 开发期侦察脚本
+- AGENTS.md AI 开发指南
 
 ## License
 
